@@ -1,17 +1,19 @@
 plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-    id 'androidx.navigation.safeargs.kotlin'
+    alias libs.plugins.android.application
+    alias libs.plugins.android.kotlin
+    alias libs.plugins.hilt.android
+    alias libs.plugins.kapt
+    alias libs.plugins.androidx.navigation
 }
 
 android {
     namespace 'com.juniorkekod.disneyplusclonekekod'
-    compileSdk 33
+    compileSdk libs.versions.compile.sdk.get().toInteger()
 
     defaultConfig {
         applicationId "com.juniorkekod.disneyplusclonekekod"
-        minSdk 21
-        targetSdk 33
+        minSdk libs.versions.min.sdk.get().toInteger()
+        targetSdk libs.versions.target.sdk.get().toInteger()
         versionCode 1
         versionName "1.0"
 
@@ -37,17 +39,13 @@ android {
 }
 
 dependencies {
-
-    def nav_version = "2.5.3"
-
-    implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    implementation libs.bundles.default
+    implementation libs.androidx.constraintlayout
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
+    debugImplementation libs.leak.canary
+    testImplementation libs.test.junit
+    androidTestImplementation libs.test.androidx.junit
+    androidTestImplementation libs.test.espresso
+    implementation libs.bundles.navigation
 }
