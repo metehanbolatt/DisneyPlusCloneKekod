@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
+    <string name="sign_in_with_email">E-postanızla oturum açın</string>
+    <string name="email_address">E-posta adresi</string>
+    <string name="next">Devam et</string>
+    <string name="new_to_disney_plus">Disney+\'ta yeni misiniz?</string>
+    <string name="sign_up">Kaydolun</string>
+    <string name="enter_your_password">Parolanızı girin</string>
+    <string name="password_field_rule">(büyük/küçük harfe duyarlı)</string>
+    <string name="password">Parola</string>
+    <string name="sign_in">Oturum Aç</string>
+    <string name="forgot_password">Parolanızı mı Unuttunuz?</string>
+    <string name="check_email_inbox">E-posta gelen kutunuzu \nkontrol edin</string>
+    <string name="approve_your_email">E-posta adresinizi doğrulamamız gerekiyor. *******@gmail.com adresine, geçerliliği 15 dakika sonra sona erecek 6 haneli bir kod içeren bir e-posta gönderdik. Lütfen kodu aşağıya girin.</string>
+    <string name="did_not_you_get_email">E-postayı almadınız mı? Önemsiz veya istenmeyen e-posta klasörlerinizi kontrol edin.</string>
+    <string name="send_again">Tekrar Gönder</string>
 </resources>
