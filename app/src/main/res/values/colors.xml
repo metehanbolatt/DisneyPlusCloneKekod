@@ -17,4 +17,8 @@
     <color name="text_color_2">#62A1D6</color>
     <color name="text_color_3">#BDBEC8</color>
     <color name="icon_color">#C7CAC8</color>
+
+    <color name="dark_blue">#FF060222</color>
+    <color name="light_blue">#FF23479f</color>
+    <color name="background_color">#FF1A1C29</color>
 </resources>
