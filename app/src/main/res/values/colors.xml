@@ -2,9 +2,17 @@
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_700">#1A1C29</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#1A1C29</color>
+    <color name="step_text">#61616D</color>
+    <color name="email_text">#F6F8FA</color>
+    <color name="edittext_color">#31333F</color>
+    <color name="email_textview">#FAFAFA</color>
+    <color name="information_color">#B9BBC7</color>
+    <color name="button_color">#0072D2</color>
+    <color name="link_color">#3E91CD</color>
 </resources>

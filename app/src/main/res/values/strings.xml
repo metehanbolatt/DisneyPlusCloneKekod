@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="step">STEP ¼</string>
+    <string name="email_adress">Email Address</string>
+    <string name="please_email_adres">Please entry e-mail address</string>
+    <string name="allow_information_text">Yes! I would like to receive special offers and updates of products related to Disney+ and other products and services of the Walt Disney Group of Companies via email</string>
+    <string name="explain_text">Disney an Disney+</string>
+    <string name="continue_button">Continue</string>
 </resources>

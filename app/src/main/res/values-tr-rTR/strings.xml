@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="step">ADIM ¼</string>
+    <string name="email_adress">E-posta adresi</string>
+    <string name="please_email_adres">E-posta adresinizi girin</string>
+    <string name="allow_information_text">Evet! Disney+ ve <a href="disneyplus.com/tr-tr">Walt Disney Şirketler Grubu\'nun</a> diğer ürün ve hizmetleriyle ilgili özel teklifler ve ürünlerle ilgili güncellemeleri e-posta yoluyla almak istiyorum</string>
+    <string name="explain_text">Disney verilerinizi, Disney plus deneyiminizi kişiselleştirmek ve iyileştrimek, ayrıca size Disney+ hakkında bilgiler göndermek için kullanacaktır. İletişim tercihlerinizi dilediğiniz zaman değiştirebilirsiniz. Verilerinizi, Walt Disney Şriketler Grubu da dahil olmak üzere <a href="disneyplus.com/tr-tr">Gizlilik Politikası\'nda</a> açıklandığı şekilde kullanabilirsiniz. "Devam Et" tıkladığınızda <a href="disneyplus.com/tr-tr">Gizlilik Politikasını</a>,<a href="disneyplus.com/tr-tr">Tanımlama Bilgileri Politikası\'nı</a> ve <a href="disneyplus.com/tr-tr">EMEA Gizlilik Hakları\'nı</a> okuduğunuzu kabul etmiş olursunuz. </string>
+    <string name="continue_button">Devam Et</string>
 </resources>
