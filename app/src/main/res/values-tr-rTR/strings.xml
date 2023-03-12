@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
+    <!--Otp-->
+    <string name="cd_cancel">İptal</string>
+    <string name="otp_pin_description">Profil PIN kodunuzu girin</string>
+    <string name="otp_edittext_hint">Pin Kodu</string>
+    <string name="otp_pin_error_toast">Şifre Hatalı</string>
+    <string name="otp_forgot_pin_tv">PIN kodunuzu mu unuttunuz?</string>
+
 </resources>
