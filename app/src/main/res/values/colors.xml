@@ -13,6 +13,8 @@
     <color name="edittext_color">#31333F</color>
     <color name="email_textview">#FAFAFA</color>
     <color name="information_color">#B9BBC7</color>
+    <color name="accept_text_color">#A7A7B3</color>
+    <color name="line_color">#464855</color>
     <color name="button_color">#0072D2</color>
     <color name="link_color">#3E91CD</color>
 </resources>

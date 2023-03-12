@@ -17,7 +17,16 @@
         tools:layout="@layout/fragment_first_login" />
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.juniorkekod.disneyplusclonekekod.presentation.login.RegisterFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_membershipFragment"
+            app:destination="@id/membershipFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/membershipFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.MembershipFragment"
+        android:label="fragment_membership"
+        tools:layout="@layout/fragment_membership" />
 </navigation>

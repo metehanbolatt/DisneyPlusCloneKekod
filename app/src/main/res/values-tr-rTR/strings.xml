@@ -2,10 +2,16 @@
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="step">ADIM ¼</string>
+    <string name="stepOne">ADIM 1 /4</string>
+    <string name="stepTwo">ADIM 2 /4</string>
     <string name="email_adress">E-posta adresi</string>
-    <string name="please_email_adres">E-posta adresinizi girin</string>
+    <string name="please_email_address">E-posta adresinizi girin</string>
     <string name="allow_information_text">Evet! Disney+ ve <a href="disneyplus.com/tr-tr">Walt Disney Şirketler Grubu\'nun</a> diğer ürün ve hizmetleriyle ilgili özel teklifler ve ürünlerle ilgili güncellemeleri e-posta yoluyla almak istiyorum</string>
-    <string name="explain_text">Disney verilerinizi, Disney plus deneyiminizi kişiselleştirmek ve iyileştrimek, ayrıca size Disney+ hakkında bilgiler göndermek için kullanacaktır. İletişim tercihlerinizi dilediğiniz zaman değiştirebilirsiniz. Verilerinizi, Walt Disney Şriketler Grubu da dahil olmak üzere <a href="disneyplus.com/tr-tr">Gizlilik Politikası\'nda</a> açıklandığı şekilde kullanabilirsiniz. "Devam Et" tıkladığınızda <a href="disneyplus.com/tr-tr">Gizlilik Politikasını</a>,<a href="disneyplus.com/tr-tr">Tanımlama Bilgileri Politikası\'nı</a> ve <a href="disneyplus.com/tr-tr">EMEA Gizlilik Hakları\'nı</a> okuduğunuzu kabul etmiş olursunuz. </string>
+    <string name="explain_text">Disney verilerinizi, Disney plus deneyiminizi kişiselleştirmek ve iyileştirmek, ayrıca size Disney+ hakkında bilgiler göndermek için kullanacaktır. İletişim tercihlerinizi dilediğiniz zaman değiştirebilirsiniz. Verilerinizi, Walt Disney Şriketler Grubu da dahil olmak üzere <a href="disneyplus.com/tr-tr">Gizlilik Politikası\'nda</a> açıklandığı şekilde kullanabilirsiniz. "Devam Et" tıkladığınızda <a href="disneyplus.com/tr-tr">Gizlilik Politikasını</a>,<a href="disneyplus.com/tr-tr">Tanımlama Bilgileri Politikası\'nı</a> ve <a href="disneyplus.com/tr-tr">EMEA Gizlilik Hakları\'nı</a> okuduğunuzu kabul etmiş olursunuz. </string>
     <string name="continue_button">Devam Et</string>
+    <string name="membership_agreement">Üyelik Sözleşmesi</string>
+    <string name="membership_writing">
+        Disney+ Üyelik Sözleşmesi\n\nTürkiye\nGüncelleme Tarihi: 1 Mayıs 2022\n\nDISNEY DTC EM LIMITED ("Disney+", "biz", "biz", "bizim") olarak Disney+ Servisi\'ne katılmanızdan büyük memnuniyet duyuyoruz. "Disney+ Servisi; Disney+ web sitesini, uygulamasını, ilgili içerikleri ve servisleri kapsamaktadır.\n\nDISNEY+ SERVİSİ\'Nİ KULLANMADAN ÖNCE LÜTFEN BU OYELİK SÖZLEŞMESİ\'Nİ ("DISNEY+ ÜYELİK SÖZLEŞMESİ VEYA "SÖZLEŞME") DİKKATLİCE OKUYUN.\n\nBU SÖZLEŞME YALNIZCA DISNEY+ SERVİSİ\'Nİ KULLANIMINIZ İÇİN GEÇERLİ OLACAKTIR. BİR DISNEY+ HESABI OLUŞTURDUKTAN SONRA ERİŞEBİLECEĞİNİZ DİĞER DISNEY SERVİSLERİNİ KULLANIMINIZ\nWWW.DISNEYTERMSOFUSE.COM ADRESİNDE YER ALAN THE WALT DISNEY COMPANY KULLANIM ŞARTLARINA TABİDİR.\n\nDisney+ kayıt işlemi sırasında "Devam Et" seçeneğine tıkladığınızda ya da farklı bir endüstri standardı mekanizmayı kullandığınızda Disney+ Oyelik Sözleşmesini kabul etmiş ve Disney+ Servisi\'nin herhangi bir unsurunu kullandığınızda sözleşmenizi tasdik etmiş olursunuz. Disney+ Oyelik Sözleşmesi\'ni kabul etmezseniz Disney+ Servisini kullanamazsınız. Disney+ Servisini ve Disney+ İçeriklerini kullanımınızla ilgili makul talimatlarımıza ve şartlarımıza uymanız ve uyacağınızı kabul etmeniz gerekir. Disney+ Servisi\'nin fiyatlandırılması dahil olmak üzere işbu Sözleşme\'de değişiklikler yapabiliriz. Onemli değişiklikler, size yapacağımız bildirimden en az otuz (30) gün sonra geçerli olacaktır (ve Disney+ Servisi\'nde yapılan değişikliklerin ayrıntılarını da paylaşabiliriz).</string>
+    <string name="accept_and_continue">KABUL ET VE DEVAM ET</string>
+    <string name="accept_membership_text">"Kabul Et ve Devam Et"e Tıkladığında Üyelik Sözleşmesini kabul etmiş olursunuz.</string>
 </resources>

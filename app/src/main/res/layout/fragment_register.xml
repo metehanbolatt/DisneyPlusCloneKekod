@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/step"
+            android:text="@string/stepOne"
             android:textColor="@color/step_text"
             android:textSize="12sp" />
 
@@ -31,7 +31,7 @@
         android:layout_marginHorizontal="@dimen/email_space"
         android:layout_marginBottom="10dp"
         android:gravity="start"
-        android:text="@string/please_email_adres"
+        android:text="@string/please_email_address"
         android:textColor="@color/email_textview"
         android:textSize="@dimen/email_text"
         android:textStyle="bold"
@@ -112,7 +112,7 @@
                 android:background="@color/button_color"
                 android:fontFamily="@font/avenir_heavy"
                 android:text="@string/continue_button"
-                android:textColor="@color/information_color"
+                android:textColor="@color/email_text"
                 android:textSize="@dimen/continue_button"
                 android:textStyle="bold" />
 
