@@ -8,6 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="register_background">#1a1c29</color>
+    <color name="light_gray">#91919c</color>
+    <color name="light_gray_half_opacity">#8891919c</color>
+    <color name="blue_00">#0072d2</color>
+    <color name="blue_42">#42719b</color>
+
     <color name="dark_blue">#FF060222</color>
     <color name="light_blue">#FF23479f</color>
     <color name="background_color">#FF1A1C29</color>

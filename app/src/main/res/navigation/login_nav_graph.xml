@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/registerFourthStepFragment">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -15,4 +15,24 @@
         android:name="com.juniorkekod.disneyplusclonekekod.presentation.login.FirstLoginFragment"
         android:label="fragment_first_login"
         tools:layout="@layout/fragment_first_login" />
+    <fragment
+        android:id="@+id/registerFourthStepFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterFourthStepFragment"
+        android:label="fragment_register_fourth_step"
+        tools:layout="@layout/fragment_register_fourth_step">
+        <action
+            android:id="@+id/action_registerFourthStepFragment_to_registerCreditCardFragment"
+            app:destination="@id/registerCreditCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerCreditCardFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterCreditCardFragment"
+        android:label="fragment_register_credit_card"
+        tools:layout="@layout/fragment_register_credit_card">
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+
+
 </navigation>

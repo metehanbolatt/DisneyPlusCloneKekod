@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_background"
+    tools:context=".presentation.register.RegisterFourthStepFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/stepTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/avenir_roman"
+        android:textColor="@color/light_gray"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ADIM 4/4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/avenir_heavy"
+        android:text="@string/key_cancel"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="İPTAL ET" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/disneyPlusLogo"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/disney_logo_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/startToWatchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:fontFamily="@font/avenir_heavy"
+        android:gravity="center_horizontal"
+        android:text="@string/key_let_s_start_to_watch"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/disneyPlusLogo"
+        tools:text="Hemen bugün izlemeye başlayın" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/avenir_roman"
+        android:gravity="center_horizontal"
+        android:text="@string/key_let_s_start_to_watch_desc"
+        android:textColor="@color/light_gray"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/startToWatchTitle"
+        tools:text="Dilediğiniz an iptal edebilirsiniz" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.60"
+        android:fontFamily="@font/avenir_roman"
+        android:text="@string/key_payment_desc"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/monthlyLayout"
+        tools:text="Aşağıdaki aylık veya yıllık üyelik düğmesini seçtiğinizde, üyeliğinizi hemen başlatmayı ve Disney+ Servisi'ndeki dijital içeriklere erişmediğiniz sürece ilk 14 gün içinde sözleşmeyi iptal edip para iadesi alabileceğinizi kabul etmiş olursunuz. Aylık veya yıllık ücret sizden yinelenen şekilde tahsil edilecektir. Fatura döneminin sonundan itibaren geçerli olmak üzere üyeliğinizi dilediğiniz an iptal edebilirsiniz. Kısmen kullanılan aylar veya yıllar için para iadesi yapılmaz ya da alacak tanımlanmaz." />
+
+    <LinearLayout
+        android:id="@+id/monthlyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/blue_background_rounded"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/annualLayout">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_heavy"
+            android:text="@string/key_campaign_monthly"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:text="₺34,99" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_heavy"
+            android:text="@string/key_register_month"
+            android:textColor="@color/white"
+            android:alpha="0.45"
+            android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            tools:text="/ ay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/annualLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:background="@drawable/blue_background_rounded"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/campaignDescTextView">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_heavy"
+            android:text="@string/key_campaign_annual"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:text="₺349,90" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_heavy"
+            android:text="@string/key_register_year"
+            android:textColor="@color/white"
+            android:alpha="0.45"
+            android:layout_marginStart="10dp"
+            android:textSize="17sp"
+            tools:text="/ yıl" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/campaignDescTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.6"
+        android:fontFamily="@font/avenir_roman"
+        android:gravity="center"
+        android:text="@string/key_campaign_desc"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/restorePurchasesTextView"
+        tools:text="(12 ay boyunca aylık 29,16 TL. %15\'ten fazla indirim)" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/restorePurchasesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/avenir_roman"
+        android:gravity="center"
+        android:text="@string/key_restore_purchases"
+        android:textColor="@color/blue_42"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Satın alınanları geri yükle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
