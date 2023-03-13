@@ -1,9 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/register_background"
+    android:orientation="vertical"
     tools:context=".presentation.register.RegisterCreditCardFragment">
 
+    <LinearLayout
+        android:id="@+id/annualLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_heavy"
+            android:text="@string/key_campaign_annual"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:text="₺349,90" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:alpha="0.45"
+            android:fontFamily="@font/avenir_heavy"
+            android:text="@string/key_register_year"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:text="/ yıl" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/avenir_roman"
+        android:text="@string/key_name"
+        android:textColor="@color/light_gray" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.70"
+        android:background="@drawable/gray_background_rounded"
+        android:fontFamily="@font/avenir_roman"
+        android:maxLines="1"
+        android:paddingHorizontal="20dp"
+        android:textColor="@color/white"
+        tools:text="Senem Yalın" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/avenir_roman"
+        android:text="@string/key_card_number"
+        android:textColor="@color/light_gray" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.70"
+        android:background="@drawable/gray_background_rounded"
+        android:fontFamily="@font/avenir_roman"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingHorizontal="20dp"
+        android:textColor="@color/white"
+        tools:text="15050505050505" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_roman"
+                android:text="@string/key_expiration_date"
+                android:textColor="@color/light_gray" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.70"
+                android:background="@drawable/gray_background_rounded"
+                android:fontFamily="@font/avenir_roman"
+                android:hint="MM/YY"
+                android:maxLines="1"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_roman"
+                android:text="@string/key_cvv_cvn"
+                android:textColor="@color/light_gray" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:alpha="0.70"
+                android:background="@drawable/gray_background_rounded"
+                android:fontFamily="@font/avenir_roman"
+                android:hint="CVC"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/monthlyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/blue_background_rounded"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/annualLayout">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_heavy"
+            android:text="@string/key_complete_payment"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

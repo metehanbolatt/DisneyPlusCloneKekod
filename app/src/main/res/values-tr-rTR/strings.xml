@@ -12,5 +12,10 @@
     <string name="key_campaign_annual">₺349,90</string>
     <string name="key_register_year">/ yıl</string>
     <string name="key_payment_desc">Aşağıdaki aylık veya yıllık üyelik düğmesini seçtiğinizde, üyeliğinizi hemen başlatmayı ve Disney+ Servisi\'ndeki dijital içeriklere erişmediğiniz sürece ilk 14 gün içinde sözleşmeyi iptal edip para iadesi alabileceğinizi kabul etmiş olursunuz. Aylık veya yıllık ücret sizden yinelenen şekilde tahsil edilecektir. Fatura döneminin sonundan itibaren geçerli olmak üzere üyeliğinizi dilediğiniz an iptal edebilirsiniz. Kısmen kullanılan aylar veya yıllar için para iadesi yapılmaz ya da alacak tanımlanmaz.</string>
+    <string name="key_name">İsim</string>
+    <string name="key_card_number">Kart Numarası</string>
+    <string name="key_expiration_date">Son Kullanma Tarihi</string>
+    <string name="key_cvv_cvn">CVV/CVN</string>
+    <string name="key_complete_payment">Ödemeyi Tamamla</string>
 
 </resources>

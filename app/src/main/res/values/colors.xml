@@ -10,6 +10,7 @@
 
     <color name="register_background">#1a1c29</color>
     <color name="light_gray">#91919c</color>
+    <color name="light_gray_half_opacity">#8891919c</color>
     <color name="blue_00">#0072d2</color>
     <color name="blue_42">#42719b</color>
 </resources>
