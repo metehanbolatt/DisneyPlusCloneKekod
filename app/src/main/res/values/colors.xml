@@ -16,5 +16,12 @@
     <color name="accept_text_color">#A7A7B3</color>
     <color name="line_color">#464855</color>
     <color name="button_color">#0072D2</color>
+    <color name="allow_info_color">#A1A2AB</color>
     <color name="link_color">#3E91CD</color>
+    <color name="for_sign_color">#A0A2AD</color>
+    <color name="checkbox_color">#6E7482</color>
+    <color name="checkbox_text_color">#0072D2</color>
+    <color name="hint_text_color">#AAAAB6</color>
+    <color name="back_button_color">#F8F8F8</color>
+    <color name="warning_color">#AF413F</color>
 </resources>

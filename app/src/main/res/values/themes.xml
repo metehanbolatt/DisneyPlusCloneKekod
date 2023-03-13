@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.DisneyPlusCloneKekod" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -12,5 +12,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+    
+    <style name="EditTextLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="background">@color/step_text</item>
+        <item name="boxStrokeColor">@color/checkbox_color</item>
+        <item name="android:textColorHint">@color/information_color</item>
+        <item name="hintTextColor">@color/email_text</item>
     </style>
 </resources>

@@ -15,6 +15,7 @@
         android:layout_marginBottom="10dp">
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/stepOneText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -29,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/email_space"
-        android:layout_marginBottom="10dp"
+        android:layout_marginVertical="@dimen/email_space"
         android:gravity="start"
         android:text="@string/please_email_address"
         android:textColor="@color/email_textview"
@@ -38,20 +39,20 @@
         app:fontFamily="@font/avenir_roman" />
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/ThemeOverlay.Material3.TextInputEditText"
+        style="@style/EditTextLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:hint="@string/email_adress"
-        app:hintTextColor="@color/email_text"
-        tools:background="@color/step_text">
+        android:hint="@string/email_adress">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/edittext_color" />
+            android:background="@color/edittext_color"
+            android:textColor="@color/information_color" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -62,15 +63,19 @@
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatCheckBox
-            android:layout_width="50dp"
-            android:layout_height="50dp" />
+            android:id="@+id/selectedCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:buttonTint="@color/checkbox_color" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/takeInfoText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autoLink="all"
             android:text="@string/allow_information_text"
-            android:textColor="@color/information_color"
+            android:textColor="@color/allow_info_color"
             android:textColorLink="@color/link_color"
             android:textSize="@dimen/information_text"
             app:fontFamily="@font/avenir_heavy" />
@@ -91,6 +96,7 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/specificationText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/explain_space"
@@ -100,16 +106,17 @@
                 android:textColor="@color/information_color"
                 android:textColorLink="@color/link_color"
                 android:textSize="@dimen/information_text"
-                app:fontFamily="@font/avenir_heavy" />
+                app:fontFamily="@font/avenir_heavy"
+                tools:ignore="VisualLintLongText" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/continueButton"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginHorizontal="@dimen/explain_space"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@color/button_color"
+                android:background="@drawable/button_background"
                 android:fontFamily="@font/avenir_heavy"
                 android:text="@string/continue_button"
                 android:textColor="@color/email_text"

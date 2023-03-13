@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_nav_graph"
-    app:startDestination="@id/registerFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -19,14 +19,38 @@
         android:id="@+id/registerFragment"
         android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
+        tools:layout="@layout/fragment_register">
         <action
-            android:id="@+id/action_registerFragment_to_membershipFragment"
+            android:id="@+id/home_to_memberShipFragment"
             app:destination="@id/membershipFragment" />
     </fragment>
     <fragment
         android:id="@+id/membershipFragment"
         android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.MembershipFragment"
         android:label="fragment_membership"
-        tools:layout="@layout/fragment_membership" />
+        tools:layout="@layout/fragment_membership">
+        <action
+            android:id="@+id/membership_to_createPasswordFragment"
+            app:destination="@+id/createPasswordFragment" />
+        <argument
+            android:name="email_address"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="isSelectedCheckbox"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPasswordFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.CreatePasswordFragment"
+        android:label="fragment_create_password"
+        tools:layout="@layout/fragment_create_password" >
+        <argument
+            android:name="email_address"
+            app:argType="string"
+            app:nullable="true"/>
+        <argument
+            android:name="isSelectedCheckBox"
+            app:argType="boolean" />
+    </fragment>
 </navigation>

@@ -8,4 +8,8 @@
     <dimen name="allow_info_space">20dp</dimen>
     <dimen name="explain_space">10dp</dimen>
     <dimen name="memmbership_text">20sp</dimen>
+    <dimen name="button_text_size">15sp</dimen>
+    <dimen name="email_text_size">16sp</dimen>
+    <dimen name="advice_text_size">14sp</dimen>
+    <dimen name="password_text_size">20sp</dimen>
 </resources>
