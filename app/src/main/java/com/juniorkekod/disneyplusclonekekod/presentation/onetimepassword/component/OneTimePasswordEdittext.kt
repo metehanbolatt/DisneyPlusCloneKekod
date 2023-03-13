@@ -24,15 +24,22 @@ class OneTimePasswordEdittext @JvmOverloads constructor(
     private var mLineStrokeSelected = 2f
 
     //Paint
-    private var mLinesPaint: Paint? = null
     private var circleEmptyPaint: TextPaint? = null
-    private var rectBackgroundPaint: TextPaint? = null
+    private var rectBackgroundPaint: TextPaint = TextPaint(Paint.ANTI_ALIAS_FLAG).apply {
+        style = Paint.Style.FILL_AND_STROKE
+        textSize = textSize
+        color = ContextCompat.getColor(context, R.color.otp_rect_background_gray)
+    }
     private val linePaint = Paint().apply {
         color = ContextCompat.getColor(context, R.color.otp_focused_line_blue)
         strokeWidth = mLineStrokeSelected
     }
     private var circleEnteredPaint: TextPaint? = null
-    private var focusedRectPaint: TextPaint? = null
+    private var focusedRectPaint: TextPaint = TextPaint().apply {
+        style = Paint.Style.FILL_AND_STROKE
+        textSize = textSize
+        color = ContextCompat.getColor(context, R.color.otp_rect_focused_background_gray)
+    }
 
     private var textWidths = FloatArray(4)
 
@@ -56,27 +63,13 @@ class OneTimePasswordEdittext @JvmOverloads constructor(
             textSize = textSize
             color = ContextCompat.getColor(context, R.color.otp_empty_circle_gray)
         }
-        rectBackgroundPaint = TextPaint(Paint.ANTI_ALIAS_FLAG).apply {
-            style = Paint.Style.FILL_AND_STROKE
-            textSize = textSize
-            strokeWidth = 2f
-            color = ContextCompat.getColor(context, R.color.otp_rect_background_gray)
-        }
         circleEnteredPaint = TextPaint(Paint.ANTI_ALIAS_FLAG).apply {
             density = multi
             style = Paint.Style.FILL
             textSize = textSize
             color = ContextCompat.getColor(context, R.color.otp_entered_circle_gray)
         }
-        focusedRectPaint = TextPaint(Paint.ANTI_ALIAS_FLAG).apply {
-            style = Paint.Style.FILL_AND_STROKE
-            textSize = textSize
-            strokeWidth = 2f
-            color = ContextCompat.getColor(context, R.color.otp_rect_focused_background_gray)
-        }
-        mLinesPaint = Paint(paint).apply {
-            strokeWidth = mLineStroke
-        }
+
 
         //maxLength
         val mMaxLength = attrs?.getAttributeIntValue(XML_NAMESPACE_ANDROID, MAX_LENGTH, 4)
@@ -126,7 +119,7 @@ class OneTimePasswordEdittext @JvmOverloads constructor(
                 ((bottom - mLineSpacing) / 2) + (mCharSize / 2),
                 5f,
                 5f,
-                rectBackgroundPaint!!
+                rectBackgroundPaint
             )
             //Empty Circle
             canvas?.drawCircle(
@@ -143,7 +136,7 @@ class OneTimePasswordEdittext @JvmOverloads constructor(
                     ((bottom - mLineSpacing) / 2) + (mCharSize / 2),
                     5f,
                     5f,
-                    focusedRectPaint!!
+                    focusedRectPaint
                 )
                 canvas?.drawCircle(
                     middle,
