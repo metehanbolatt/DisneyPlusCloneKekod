@@ -11,4 +11,12 @@
     <color name="dark_blue">#FF060222</color>
     <color name="light_blue">#FF23479f</color>
     <color name="background_color">#FF1A1C29</color>
+
+    <color name="otp_entered_circle_gray">#f9f9f9</color>
+    <color name="otp_empty_circle_gray">#4b4d5a</color>
+    <color name="otp_rect_background_gray">#31333f</color>
+    <color name="otp_focused_line_blue">#01e7f5</color>
+    <color name="otp_rect_focused_background_gray">#474a53</color>
+    <color name="otp_title_white">#edf0f3</color>
+    <color name="otp_clickable_span_tv">#4a6685</color>
 </resources>
