@@ -9,9 +9,9 @@
     tools:context=".presentation.splash.SplashFragment">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:id="@+id/ivSplashLogo"
+        android:layout_width="@dimen/splash_logo_width"
+        android:layout_height="@dimen/splash_logo_height"
         android:src="@drawable/disney_plus_with_line_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
