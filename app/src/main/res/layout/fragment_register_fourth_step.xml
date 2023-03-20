@@ -77,73 +77,37 @@
         android:fontFamily="@font/avenir_roman"
         android:text="@string/key_payment_desc"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/monthlyLayout"
+        app:layout_constraintBottom_toTopOf="@id/monthlyTextView"
         tools:text="Aşağıdaki aylık veya yıllık üyelik düğmesini seçtiğinizde, üyeliğinizi hemen başlatmayı ve Disney+ Servisi'ndeki dijital içeriklere erişmediğiniz sürece ilk 14 gün içinde sözleşmeyi iptal edip para iadesi alabileceğinizi kabul etmiş olursunuz. Aylık veya yıllık ücret sizden yinelenen şekilde tahsil edilecektir. Fatura döneminin sonundan itibaren geçerli olmak üzere üyeliğinizi dilediğiniz an iptal edebilirsiniz. Kısmen kullanılan aylar veya yıllar için para iadesi yapılmaz ya da alacak tanımlanmaz." />
 
-    <LinearLayout
-        android:id="@+id/monthlyLayout"
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/monthlyTextView"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/blue_background_rounded"
+        android:fontFamily="@font/avenir_roman"
         android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/annualLayout">
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@id/annualTextView"
+        tools:text="₺34,99" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/avenir_heavy"
-            android:text="@string/key_campaign_monthly"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            tools:text="₺34,99" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/avenir_heavy"
-            android:text="@string/key_register_month"
-            android:textColor="@color/white"
-            android:alpha="0.45"
-            android:layout_marginStart="10dp"
-            android:textSize="17sp"
-            tools:text="/ ay" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/annualLayout"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/annualTextView"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/blue_background_rounded"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/campaignDescTextView">
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/avenir_heavy"
-            android:text="@string/key_campaign_annual"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            tools:text="₺349,90" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/avenir_heavy"
-            android:text="@string/key_register_year"
-            android:textColor="@color/white"
-            android:alpha="0.45"
-            android:layout_marginStart="10dp"
-            android:textSize="17sp"
-            tools:text="/ yıl" />
-
-    </LinearLayout>
+        android:fontFamily="@font/avenir_roman"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@id/campaignDescTextView"
+        tools:text="₺349,90" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/campaignDescTextView"

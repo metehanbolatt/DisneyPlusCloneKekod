@@ -31,7 +31,7 @@
         tools:layout="@layout/fragment_register_credit_card">
         <argument
             android:name="type"
-            app:argType="string" />
+            app:argType="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterCreditCardFragment$PurchaseTypes" />
     </fragment>
 
 

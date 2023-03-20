@@ -17,4 +17,7 @@
     <string name="key_cvv_cvn">CVV/CVN</string>
     <string name="key_complete_payment">Complete Payment</string>
 
+    <string name="key_step_count">%s %s/4</string>
+    <string name="key_purchase_type">%s %s</string>
+
 </resources>

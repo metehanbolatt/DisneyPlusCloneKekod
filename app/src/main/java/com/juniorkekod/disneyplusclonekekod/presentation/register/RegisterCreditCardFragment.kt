@@ -29,13 +29,18 @@ class RegisterCreditCardFragment : Fragment() {
     }
 
     private fun setView() {
-        if (args.type == "ANNUAL") {
+        if (args.type == PurchaseTypes.ANNUAL) {
             binding.amount.text = getString(R.string.key_campaign_annual)
             binding.type.text = getString(R.string.key_register_year)
         } else {
             binding.amount.text = getString(R.string.key_campaign_monthly)
             binding.type.text = getString(R.string.key_register_month)
         }
+    }
+
+    enum class PurchaseTypes {
+        ANNUAL,
+        MONTHLY
     }
 
 }
