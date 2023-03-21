@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_background"
+    android:orientation="vertical"
+    tools:context=".presentation.register.RegisterCreditCardFragment">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/payment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_fourth_step_button_height"
+        android:layout_marginHorizontal="@dimen/register_fourth_step_payment_desc_margin_horizontal"
+        android:layout_marginTop="@dimen/register_credit_card_payment_text_margin_top"
+        android:layout_marginBottom="@dimen/register_credit_card_payment_text_margin_bottom"
+        android:fontFamily="@font/avenir_heavy"
+        android:gravity="center"
+        android:text="@string/key_campaign_annual"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="₺349,90" />
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/register_fourth_step_title_margin_horizontal"
+        android:fontFamily="@font/avenir_roman"
+        android:text="@string/key_name"
+        android:textColor="@color/light_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/payment_layout" />
+
+    <EditText
+        android:id="@+id/name_edit_text"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_fourth_step_button_height"
+        android:layout_marginHorizontal="@dimen/register_fourth_step_title_margin_horizontal"
+        android:layout_marginTop="@dimen/register_credit_card_titles_margin_top"
+        android:alpha="0.70"
+        android:background="@drawable/gray_background_rounded"
+        android:fontFamily="@font/avenir_roman"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/register_fourth_step_campaign_desc_margin_bottom"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/name_text_view"
+        tools:text="Senem Yalın" />
+
+    <TextView
+        android:id="@+id/card_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/register_fourth_step_title_margin_horizontal"
+        android:layout_marginTop="@dimen/register_credit_card_payment_text_margin_bottom"
+        android:fontFamily="@font/avenir_roman"
+        android:text="@string/key_card_number"
+        android:textColor="@color/light_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_edit_text" />
+
+    <EditText
+        android:id="@+id/card_number_edit_text"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_fourth_step_button_height"
+        android:layout_marginHorizontal="@dimen/register_fourth_step_title_margin_horizontal"
+        android:layout_marginTop="@dimen/register_credit_card_titles_margin_top"
+        android:alpha="0.70"
+        android:background="@drawable/gray_background_rounded"
+        android:fontFamily="@font/avenir_roman"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/register_fourth_step_campaign_desc_margin_bottom"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/card_number_text_view"
+        tools:text="15050505050505" />
+
+
+    <TextView
+        android:id="@+id/expiration_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/register_fourth_step_title_margin_horizontal"
+        android:layout_marginTop="@dimen/register_credit_card_payment_text_margin_bottom"
+        android:fontFamily="@font/avenir_roman"
+        android:text="@string/key_expiration_date"
+        android:textColor="@color/light_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_number_edit_text" />
+
+    <EditText
+        android:id="@+id/expiration_date_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/register_fourth_step_button_height"
+        android:layout_marginStart="@dimen/register_fourth_step_title_margin_horizontal"
+        android:layout_marginTop="@dimen/register_credit_card_titles_margin_top"
+        android:alpha="0.70"
+        android:background="@drawable/gray_background_rounded"
+        android:fontFamily="@font/avenir_roman"
+        android:hint="MM/YY"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/register_fourth_step_campaign_desc_margin_bottom"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintEnd_toStartOf="@id/cvc_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/expiration_date_text_view" />
+
+
+    <TextView
+        android:id="@+id/cvc_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/register_fourth_step_campaign_desc_margin_bottom"
+        android:layout_marginTop="@dimen/register_credit_card_payment_text_margin_bottom"
+        android:fontFamily="@font/avenir_roman"
+        android:text="@string/key_cvv_cvn"
+        android:textColor="@color/light_gray"
+        app:layout_constraintStart_toEndOf="@id/expiration_date_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/card_number_edit_text" />
+
+    <EditText
+        android:id="@+id/cvc_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/register_fourth_step_button_height"
+        android:layout_marginStart="@dimen/register_fourth_step_campaign_desc_margin_bottom"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="@dimen/register_fourth_step_title_margin_horizontal"
+        android:alpha="0.70"
+        android:background="@drawable/gray_background_rounded"
+        android:fontFamily="@font/avenir_roman"
+        android:hint="CVC"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/register_fourth_step_campaign_desc_margin_bottom"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/expiration_date_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/cvc_text_view" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/monthlyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_fourth_step_button_height"
+        android:layout_marginHorizontal="@dimen/register_fourth_step_title_margin_horizontal"
+        android:layout_marginBottom="@dimen/register_fourth_step_campaign_desc_margin_bottom"
+        android:background="@drawable/blue_background_rounded"
+        android:fontFamily="@font/avenir_heavy"
+        android:gravity="center"
+        android:text="@string/key_complete_payment"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

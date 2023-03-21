@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
+
+    <string name="key_step">ADIM</string>
+    <string name="key_cancel">İPTAL ET</string>
+    <string name="key_let_s_start_to_watch">Hemen bugün izlemeye başlayın</string>
+    <string name="key_let_s_start_to_watch_desc">Dilediğiniz an iptal edebilirsiniz</string>
+    <string name="key_restore_purchases">Satın alınanları geri yükle</string>
+    <string name="key_campaign_desc">(12 ay boyunca aylık 29,16 TL. %15\'ten fazla indirim)</string>
+    <string name="key_campaign_monthly">₺34,99</string>
+    <string name="key_register_month">/ ay</string>
+    <string name="key_campaign_annual">₺349,90</string>
+    <string name="key_register_year">/ yıl</string>
+    <string name="key_payment_desc">Aşağıdaki aylık veya yıllık üyelik düğmesini seçtiğinizde, üyeliğinizi hemen başlatmayı ve Disney+ Servisi\'ndeki dijital içeriklere erişmediğiniz sürece ilk 14 gün içinde sözleşmeyi iptal edip para iadesi alabileceğinizi kabul etmiş olursunuz. Aylık veya yıllık ücret sizden yinelenen şekilde tahsil edilecektir. Fatura döneminin sonundan itibaren geçerli olmak üzere üyeliğinizi dilediğiniz an iptal edebilirsiniz. Kısmen kullanılan aylar veya yıllar için para iadesi yapılmaz ya da alacak tanımlanmaz.</string>
+    <string name="key_name">İsim</string>
+    <string name="key_card_number">Kart Numarası</string>
+    <string name="key_expiration_date">Son Kullanma Tarihi</string>
+    <string name="key_cvv_cvn">CVV/CVN</string>
+    <string name="key_complete_payment">Ödemeyi Tamamla</string>
+
+    <string name="key_step_count">%s %s/4</string>
+    <string name="key_purchase_type">%s %s</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="stepOne">ADIM 1 / 4</string>
     <string name="stepTwo">ADIM 2 / 4</string>
@@ -21,3 +42,4 @@
     <string name="warning_space_line">Lütfen Boş Alanı Doldurun</string>
     <string name="valid_email_address">Geçerli E-Posta Adresi Girin</string>
 </resources>
+

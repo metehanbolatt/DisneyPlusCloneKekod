@@ -1,5 +1,26 @@
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
+
+    <string name="key_step">STEP</string>
+    <string name="key_cancel">CANCEL</string>
+    <string name="key_let_s_start_to_watch">Start watching today</string>
+    <string name="key_let_s_start_to_watch_desc">You can cancel at any time</string>
+    <string name="key_restore_purchases">Restore purchases</string>
+    <string name="key_campaign_desc">(Monthly 1,54 USD for 12 months. More than 15% discount)</string>
+    <string name="key_campaign_monthly">$1,84</string>
+    <string name="key_register_month">/ month</string>
+    <string name="key_campaign_annual">$18,45</string>
+    <string name="key_register_year">/ year</string>
+    <string name="key_payment_desc">By choosing the monthly or annual subscription button below, you agree to start your membership immediately and to cancel the contract and get a refund within the first 14 days as long as you do not access the digital content on the Disney+ Service. You will be charged a monthly or annual fee on a recurring basis. You can cancel your subscription at any time, effective from the end of the billing period. No refunds or credits are given for partially used months or years.</string>
+    <string name="key_name">Name</string>
+    <string name="key_card_number">Card Number</string>
+    <string name="key_expiration_date">Expiration Date</string>
+    <string name="key_cvv_cvn">CVV/CVN</string>
+    <string name="key_complete_payment">Complete Payment</string>
+
+    <string name="key_step_count">%s %s/4</string>
+    <string name="key_purchase_type">%s %s</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="stepOne">STEP 1 / 4</string>
     <string name="stepTwo">STEP 2 / 4</string>
