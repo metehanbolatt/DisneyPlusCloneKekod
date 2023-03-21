@@ -1,5 +1,20 @@
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
+    
+    <string name="sign_in_with_email">Sign in with your email</string>
+    <string name="email_address">E-mail address</string>
+    <string name="next">Next</string>
+    <string name="new_to_disney_plus">New to Disney+?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="password_field_rule">(case sensitive)</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="check_email_inbox">Check your email inbox</string>
+    <string name="approve_your_email">We need to verify your email address. We sent an email to *******@gmail.com with a 6 digit code that will expire in 15 minutes. Please enter the code below.</string>
+    <string name="did_not_you_get_email">Did not get the e-mail? Check your junk or spam folders.</string>
+    <string name="send_again">Send Again</string>
 
     <string name="info_txt">₺34,99/ay karşılığında üye olan ya da yıllık üyelik için sadece ₺349,90/yıl ödeyerek %15 tasarruf edin.</string>
     <string name="subscribe_now">Şimdi üye ol</string>

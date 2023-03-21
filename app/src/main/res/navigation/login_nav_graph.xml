@@ -3,6 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_nav_graph"
+    app:startDestination="@id/signInEmailFragment">
+
+    <fragment
+        android:id="@+id/signInEmailFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.signin.email.SignInEmailFragment"
+        android:label="fragment_sign_in_email"
+        tools:layout="@layout/fragment_sign_in_email" >
+        <action
+            android:id="@+id/action_signInEmailFragment_to_signInPasswordFragment"
+            app:destination="@id/signInPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInCheckEmailFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.signin.checkemail.SignInCheckEmailFragment"
+        android:label="fragment_sign_in_check_email"
+        tools:layout="@layout/fragment_sign_in_check_email" />
+    <fragment
+        android:id="@+id/signInPasswordFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.signin.password.SignInPasswordFragment"
+        android:label="fragment_sign_in_password"
+        tools:layout="@layout/fragment_sign_in_password" >
+        <action
+            android:id="@+id/action_signInPasswordFragment_to_signInCheckEmailFragment"
+            app:destination="@id/signInCheckEmailFragment" />
+    </fragment>
     app:startDestination="@id/registerFourthStepFragment">
 
     <fragment
@@ -37,8 +62,6 @@
             android:name="type"
             app:argType="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterCreditCardFragment$PurchaseTypes" />
     </fragment>
-
-
 
         android:id="@+id/registerFragment"
         android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterFragment"

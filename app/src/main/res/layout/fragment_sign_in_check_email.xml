@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".presentation.signin.checkemail.SignInCheckEmailFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/disney_logo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/disney_plus_with_line_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_circle_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/check_your_email_inbox_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/avenir_heavy"
+        android:text="@string/check_email_inbox"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintTop_toBottomOf="@id/disney_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/check_your_email_inbox_subtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/avenir_roman"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/approve_your_email"
+        android:textColor="@color/text_color_1"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/check_your_email_inbox_text" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/email_check_input_field_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_field_background"
+        app:layout_constraintTop_toBottomOf="@id/check_your_email_inbox_subtext">
+
+        <View
+            android:id="@+id/focus_control_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="2dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:fontFamily="@font/avenir_roman"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:nextFocusRight="@id/input_2"
+            android:textColor="@color/white"
+            android:textColorHint="#9f9fa9"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/input_2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:fontFamily="@font/avenir_roman"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:nextFocusRight="@id/input_3"
+            android:textColor="@color/white"
+            android:textColorHint="#9f9fa9"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/input_3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/input_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:fontFamily="@font/avenir_roman"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textColorHint="#9f9fa9"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/input_4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/input_2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:fontFamily="@font/avenir_roman"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textColorHint="#9f9fa9"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/input_5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/input_3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:fontFamily="@font/avenir_roman"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textColorHint="#9f9fa9"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/input_6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/input_4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:fontFamily="@font/avenir_roman"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textColorHint="#9f9fa9"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/input_5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/cursor_1"
+            android:layout_width="24dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/horizontal_cursor_draw"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/input_bottom_background"
+            app:layout_constraintEnd_toEndOf="@id/input_1"
+            app:layout_constraintStart_toStartOf="@id/input_1"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/cursor_2"
+            android:layout_width="24dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/horizontal_cursor_draw"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/input_bottom_background"
+            app:layout_constraintEnd_toEndOf="@id/input_2"
+            app:layout_constraintStart_toStartOf="@id/input_2"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/cursor_3"
+            android:layout_width="24dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/horizontal_cursor_draw"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/input_bottom_background"
+            app:layout_constraintEnd_toEndOf="@id/input_3"
+            app:layout_constraintStart_toStartOf="@id/input_3"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/cursor_4"
+            android:layout_width="24dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/horizontal_cursor_draw"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/input_bottom_background"
+            app:layout_constraintEnd_toEndOf="@id/input_4"
+            app:layout_constraintStart_toStartOf="@id/input_4"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/cursor_5"
+            android:layout_width="24dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/horizontal_cursor_draw"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/input_bottom_background"
+            app:layout_constraintEnd_toEndOf="@id/input_5"
+            app:layout_constraintStart_toStartOf="@id/input_5"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/cursor_6"
+            android:layout_width="24dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/horizontal_cursor_draw"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/input_bottom_background"
+            app:layout_constraintEnd_toEndOf="@id/input_6"
+            app:layout_constraintStart_toStartOf="@id/input_6"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/input_bottom_background"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/bottom_background"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/avenir_heavy"
+        android:letterSpacing="0.2"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/email_check_input_field_constraint" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/did_not_get_email_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/avenir_roman"
+        android:lineSpacingExtra="10dp"
+        android:text="@string/did_not_you_get_email"
+        android:textColor="@color/text_color_3"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/next_button" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/send_again_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/avenir_heavy"
+        android:text="@string/send_again"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/did_not_get_email_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
