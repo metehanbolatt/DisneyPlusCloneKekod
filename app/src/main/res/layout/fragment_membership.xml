@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".presentation.register.MembershipFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/step_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/stepSecondText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/stepTwo"
+            android:textColor="@color/step_text"
+            android:textSize="12sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/memberShipTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/explain_space"
+        android:fontFamily="@font/avenir_heavy"
+        android:text="@string/membership_agreement"
+        android:textColor="@color/email_text"
+        android:textSize="@dimen/memmbership_text"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/memberShipAgreementText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/avenir_heavy"
+                android:gravity="start"
+                android:text="@string/membership_writing"
+                android:textColor="@color/email_text"
+                android:textSize="13sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/gradientBackgroundView"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/scrool_background" />
+
+        <View
+            android:id="@+id/horizontalLineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/line_color" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/acceptAdviceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/avenir_roman"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:padding="5dp"
+            android:text="@string/accept_membership_text"
+            android:textColor="@color/accept_text_color"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/acceptAndContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="@dimen/continue_button"
+            android:layout_marginVertical="@dimen/continue_button"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/avenir_heavy"
+            android:text="@string/accept_and_continue"
+            android:textColor="@color/email_text"
+            android:textSize="@dimen/continue_button"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
