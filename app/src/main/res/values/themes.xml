@@ -4,4 +4,11 @@
         <item name="android:statusBarColor">@color/dark_blue</item>
         <item name="android:colorBackground">@color/background_color</item>
     </style>
+    
+    <style name="EditTextLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="background">@color/step_text</item>
+        <item name="boxStrokeColor">@color/checkbox_color</item>
+        <item name="android:textColorHint">@color/information_color</item>
+        <item name="hintTextColor">@color/email_text</item>
+    </style>
 </resources>
