@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.juniorkekod.disneyplusclonekekod.databinding.FragmentSignInEmailBinding
 
 class SignInEmailFragment : Fragment() {
@@ -22,6 +23,11 @@ class SignInEmailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.nextButton.setOnClickListener {
+            val action = SignInEmailFragmentDirections.actionSignInEmailFragmentToSignInPasswordFragment()
+            findNavController().navigate(action)
+        }
     }
 
     override fun onDestroyView() {

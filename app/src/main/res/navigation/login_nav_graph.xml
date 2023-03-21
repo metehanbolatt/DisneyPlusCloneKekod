@@ -6,18 +6,26 @@
     app:startDestination="@id/signInEmailFragment">
 
     <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.juniorkekod.disneyplusclonekekod.presentation.splash.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" />
-    <fragment
-        android:id="@+id/firstLoginFragment"
-        android:name="com.juniorkekod.disneyplusclonekekod.presentation.login.FirstLoginFragment"
-        android:label="fragment_first_login"
-        tools:layout="@layout/fragment_first_login" />
-    <fragment
         android:id="@+id/signInEmailFragment"
         android:name="com.juniorkekod.disneyplusclonekekod.presentation.signin.email.SignInEmailFragment"
         android:label="fragment_sign_in_email"
-        tools:layout="@layout/fragment_sign_in_email" />
+        tools:layout="@layout/fragment_sign_in_email" >
+        <action
+            android:id="@+id/action_signInEmailFragment_to_signInPasswordFragment"
+            app:destination="@id/signInPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInCheckEmailFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.signin.checkemail.SignInCheckEmailFragment"
+        android:label="fragment_sign_in_check_email"
+        tools:layout="@layout/fragment_sign_in_check_email" />
+    <fragment
+        android:id="@+id/signInPasswordFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.signin.password.SignInPasswordFragment"
+        android:label="fragment_sign_in_password"
+        tools:layout="@layout/fragment_sign_in_password" >
+        <action
+            android:id="@+id/action_signInPasswordFragment_to_signInCheckEmailFragment"
+            app:destination="@id/signInCheckEmailFragment" />
+    </fragment>
 </navigation>
