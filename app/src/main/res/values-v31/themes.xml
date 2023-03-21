@@ -1,17 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Base application theme. -->
+
     <style name="Theme.DisneyPlusCloneKekod" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/dark_blue</item>
         <item name="android:colorBackground">@color/background_color</item>
         <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
         <item name="android:windowSplashScreenAnimationDuration">0</item>
         <item name="android:windowDisablePreview">true</item>
-    </style>
-    
-    <style name="EditTextLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
-        <item name="background">@color/step_text</item>
-        <item name="boxStrokeColor">@color/checkbox_color</item>
-        <item name="android:textColorHint">@color/information_color</item>
-        <item name="hintTextColor">@color/email_text</item>
     </style>
 </resources>

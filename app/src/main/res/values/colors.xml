@@ -37,4 +37,7 @@
     <color name="light_blue">#FF23479f</color>
     <color name="background_color">#FF1A1C29</color>
 
+    <color name="button_bg">#0072D2</color>
+    <color name="info_txt">#8E8D93</color>
+
 </resources>
