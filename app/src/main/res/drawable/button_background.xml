@@ -4,4 +4,8 @@
     <solid android:color="@color/button_background" />
     <corners android:radius="5dp" />
 
+    <corners android:radius="6dp"/>
+    <solid android:color="@color/button_color"/>
+    <stroke android:color="#173C60" android:width="0.3dp"/>
+
 </shape>

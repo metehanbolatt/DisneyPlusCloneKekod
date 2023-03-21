@@ -42,6 +42,8 @@ dependencies {
     implementation libs.bundles.default
     implementation libs.androidx.constraintlayout
     implementation libs.hilt.android
+    implementation 'androidx.fragment:fragment:1.5.5'
+    implementation "androidx.fragment:fragment-ktx:1.5.5"
     kapt libs.hilt.compiler
     debugImplementation libs.leak.canary
     testImplementation libs.test.junit

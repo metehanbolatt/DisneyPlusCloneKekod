@@ -1,8 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/bg_first_login_gradient"
     tools:context=".presentation.login.FirstLoginFragment">
 
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_logo_height"
+            android:src="@drawable/disney_plus_with_line_logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/avenir_heavy"
+            android:text="@string/txt_slogan"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivDisney"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:src="@drawable/disney_logo" />
+
+            <ImageView
+                android:id="@+id/ivPixar"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:src="@drawable/pixar_logo" />
+
+            <ImageView
+                android:id="@+id/ivMarvel"
+                android:layout_width="@dimen/img_width"
+                android:layout_height="@dimen/img_height"
+                android:layout_weight="1"
+                android:src="@drawable/marvel_logo" />
+
+            <ImageView
+                android:id="@+id/ivStarWars"
+                android:layout_width="@dimen/img_width"
+                android:layout_height="@dimen/img_height"
+                android:layout_weight="1"
+                android:src="@drawable/star_wars_logo" />
+
+            <ImageView
+                android:id="@+id/ivNg"
+                android:layout_width="@dimen/img_width"
+                android:layout_height="@dimen/img_height"
+                android:layout_weight="1"
+                android:src="@drawable/national_geographic_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/button_bg"
+                android:fontFamily="@font/avenir_heavy"
+                android:text="@string/subscribe_now"
+                app:cornerRadius="@dimen/cornerRadius"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_heavy"
+            android:padding="@dimen/padding_txt"
+            android:text="@string/info_txt"
+            android:textAlignment="center"
+            android:textColor="@color/info_txt"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_height"
+            android:layout_marginBottom="@dimen/bottom_view"
+            android:background="#6E7187"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:backgroundTint="@color/background_color"
+                android:fontFamily="@font/avenir_heavy"
+                android:shadowColor="@color/background_color"
+                android:text="@string/sign_in"
+                android:textSize="@dimen/txt_size_btn" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.25"
+        android:scaleType="center"
+        android:src="@drawable/iv_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

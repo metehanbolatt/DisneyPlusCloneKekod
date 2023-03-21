@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
+    
     <string name="sign_in_with_email">Sign in with your email</string>
     <string name="email_address">E-mail address</string>
     <string name="next">Next</string>
@@ -14,4 +15,52 @@
     <string name="approve_your_email">We need to verify your email address. We sent an email to *******@gmail.com with a 6 digit code that will expire in 15 minutes. Please enter the code below.</string>
     <string name="did_not_you_get_email">Did not get the e-mail? Check your junk or spam folders.</string>
     <string name="send_again">Send Again</string>
+
+    <string name="info_txt">₺34,99/ay karşılığında üye olan ya da yıllık üyelik için sadece ₺349,90/yıl ödeyerek %15 tasarruf edin.</string>
+    <string name="subscribe_now">Şimdi üye ol</string>
+    <string name="sign_in">OTURUM AÇ</string>
+    <string name="txt_slogan">Dünyanın en iyi hikayeleri. Hepsi bir yerde.</string>
+
+
+    <string name="key_step">STEP</string>
+    <string name="key_cancel">CANCEL</string>
+    <string name="key_let_s_start_to_watch">Start watching today</string>
+    <string name="key_let_s_start_to_watch_desc">You can cancel at any time</string>
+    <string name="key_restore_purchases">Restore purchases</string>
+    <string name="key_campaign_desc">(Monthly 1,54 USD for 12 months. More than 15% discount)</string>
+    <string name="key_campaign_monthly">$1,84</string>
+    <string name="key_register_month">/ month</string>
+    <string name="key_campaign_annual">$18,45</string>
+    <string name="key_register_year">/ year</string>
+    <string name="key_payment_desc">By choosing the monthly or annual subscription button below, you agree to start your membership immediately and to cancel the contract and get a refund within the first 14 days as long as you do not access the digital content on the Disney+ Service. You will be charged a monthly or annual fee on a recurring basis. You can cancel your subscription at any time, effective from the end of the billing period. No refunds or credits are given for partially used months or years.</string>
+    <string name="key_name">Name</string>
+    <string name="key_card_number">Card Number</string>
+    <string name="key_expiration_date">Expiration Date</string>
+    <string name="key_cvv_cvn">CVV/CVN</string>
+    <string name="key_complete_payment">Complete Payment</string>
+
+    <string name="key_step_count">%s %s/4</string>
+    <string name="key_purchase_type">%s %s</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stepOne">STEP 1 / 4</string>
+    <string name="stepTwo">STEP 2 / 4</string>
+    <string name="email_adress">Email Address</string>
+    <string name="please_email_address">Please entry e-mail address</string>
+    <string name="allow_information_text">Yes! I would like to receive special offers and updates of products related to Disney+ and other products and services of the Walt Disney Group of Companies via email</string>
+
+    <string name="continue_button">Continue</string>
+    <string name="membership_agreement">Membership Agreement</string>
+    <string name="explain_text">Disney will use your data to personalize and improve your Disney plus experience, as well as to send you information about Disney+. You can change your communication preferences at any time. You may use your data as described in the <a href="disneyplus.com/tr-tr">Privacy Policy</a>, including the <a href="disneyplus.com/tr-tr">Walt Disney Group of Companies.</a> By clicking "Continue" you acknowledge that you have read the <a href="disneyplus.com/tr-tr">Privacy Policy</a>, <a href="disneyplus.com/tr-tr">Cookies Policy</a> and <a href="disneyplus.com/tr-tr">EMEA Privacy Rights.</a></string>
+    <string name="membership_writing">Disney+ Membership Agreement\n\nTurkiye\n\nLast Update: 1 May 2022\n\nDISNEY DTC EM LIMITED ("Disney+", "we", "we", "our") gives you great pleasure from participating in the Disney+ Service. "The Disney+ Service includes the Disney+ website, its business, related content and services are comprehensive.\n\nPLEASE READ THIS MEMBERSHIP AGREEMENT ("DISNEY+ MEMBERSHIP AGREEMENT OR "AGREEMENT") CAREFULLY BEFORE USING THE DISNEY+ SERVICE.THIS AGREEMENT SHALL APPLY ONLY FOR YOUR USE OF THE DISNEY+ SERVICE. YOUR USE OF OTHER DISNEY SERVICES AVAILABLE AFTER CREATE A DISNEY+Account SUBJECT TO THE WALT DISNEY COMPANY TERMS OF USE AT WWW.DISNEYTERMSOFUSE.COM\n\nWhen you click "Continue" during the Disney+ registration process or use a different industry standard mechanism, you have accepted the Disney+ Membership Agreement and are not authorized to use any of the Disney+ Service. By using any element of the Disney+ Service, you are confirming your agreement. If you do not accept the Disney+ Membership Agreement, you may not use the Disney+ Service. You must comply with and agree to abide by our reasonable instructions and terms regarding your use of the Disney+ Service and Disney+ Content. We may make changes to this Agreement, including the pricing of the Disney+ Service. important changes,It will be effective at least thirty (30) days after we give you notice (and we may also share details of changes made to the Disney+ Service).</string>
+    <string name="accept_and_continue">ACCEPT AND CONTINUE</string>
+    <string name="accept_membership_text">By clicking "Accept and Continue", you agree to the Membership Agreement.</string>
+    <string name="stepThree">STEP 3 / 4</string>
+    <string name="help_text">Use at least 6 characters (case sensitive) containing 2 of the following character types: letters, numbers, special characters</string>
+    <string name="for_sign_text">You will use the following email to log in:</string>
+    <string name="example_email">user_email@hotmail.com</string>
+    <string name="create_password">Create Password</string>
+    <string name="warning_space_line">Please fill in the blank</string>
+    <string name="valid_email_address">Enter valid e-mail address</string>
+
 </resources>
