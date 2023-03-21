@@ -8,20 +8,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.juniorkekod.disneyplusclonekekod.databinding.UserSelectItemBinding
 
 class UserSelectRecyclerViewAdapter(
-) :
-    ListAdapter<UserSelectModel, UserSelecViewHolder>(UserSelectModelDiffCallBack()) {
+) : ListAdapter<UserSelectModel, UserSelectViewHolder>(UserSelectModelDiffCallBack()) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserSelecViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserSelectViewHolder {
         val inf = LayoutInflater.from(parent.context)
         val binding = UserSelectItemBinding.inflate(inf, parent, false)
-        return UserSelecViewHolder(binding)
-
+        return UserSelectViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: UserSelecViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: UserSelectViewHolder, position: Int) {
         val item = getItem(position)
         holder.binding.textViewUserName.text = item.userName
-
 
     }
 
@@ -39,5 +36,5 @@ class UserSelectRecyclerViewAdapter(
     }
 }
 
-class UserSelecViewHolder(var binding: UserSelectItemBinding) :
+class UserSelectViewHolder(var binding: UserSelectItemBinding) :
     RecyclerView.ViewHolder(binding.root)

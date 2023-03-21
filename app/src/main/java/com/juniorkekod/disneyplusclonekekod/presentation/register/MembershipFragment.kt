@@ -34,11 +34,10 @@ class MembershipFragment : Fragment() {
         binding.acceptAndContinueButton.setOnClickListener {
 
             val emailAddress = args.emailAddress
-            val action = MembershipFragmentDirections.membershipToCreatePasswordFragment(emailAddress,args.isSelectedCheckbox)
+            val action = MembershipFragmentDirections.actionMembershipFragmentToCreatePasswordFragment(emailAddress,args.isSelectedCheckbox)
             findNavController().navigate(action)
         }
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

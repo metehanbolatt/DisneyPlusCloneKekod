@@ -13,7 +13,6 @@ import com.google.android.flexbox.FlexboxLayoutManager
 import com.google.android.flexbox.JustifyContent
 import com.juniorkekod.disneyplusclonekekod.databinding.FragmentUserSelectBinding
 
-
 class UserSelectFragment : Fragment() {
 
     private lateinit var binding: FragmentUserSelectBinding

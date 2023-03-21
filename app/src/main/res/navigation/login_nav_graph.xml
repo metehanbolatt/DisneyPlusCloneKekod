@@ -13,12 +13,111 @@
         <action
             android:id="@+id/action_splashFragment_to_firstLoginFragment"
             app:destination="@id/firstLoginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_userSelectFragment"
+            app:destination="@id/userSelectFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/firstLoginFragment"
         android:name="com.juniorkekod.disneyplusclonekekod.presentation.login.FirstLoginFragment"
         android:label="fragment_first_login"
-        tools:layout="@layout/fragment_first_login" />
+        tools:layout="@layout/fragment_first_login" >
+        <action
+            android:id="@+id/action_firstLoginFragment_to_signInEmailFragment"
+            app:destination="@id/signInEmailFragment" />
+        <action
+            android:id="@+id/action_firstLoginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPasswordFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.CreatePasswordFragment"
+        android:label="fragment_create_password"
+        tools:layout="@layout/fragment_create_password" >
+        <argument
+            android:name="email_address"
+            app:argType="string"
+            app:nullable="true"/>
+        <argument
+            android:name="isSelectedCheckBox"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_createPasswordFragment_to_registerFourthStepFragment"
+            app:destination="@id/registerFourthStepFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/membershipFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.MembershipFragment"
+        android:label="fragment_membership"
+        tools:layout="@layout/fragment_membership" >
+        <argument
+            android:name="email_address"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="isSelectedCheckbox"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_membershipFragment_to_createPasswordFragment"
+            app:destination="@id/createPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneTimePasswordFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.onetimepassword.OneTimePasswordFragment"
+        android:label="fragment_one_time_password"
+        tools:layout="@layout/fragment_one_time_password" />
+    <fragment
+        android:id="@+id/registerCreditCardFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterCreditCardFragment"
+        android:label="fragment_register_credit_card"
+        tools:layout="@layout/fragment_register_credit_card">
+        <argument
+            android:name="type"
+            app:argType="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterCreditCardFragment$PurchaseTypes" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFourthStepFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterFourthStepFragment"
+        android:label="fragment_register_fourth_step"
+        tools:layout="@layout/fragment_register_fourth_step" >
+        <action
+            android:id="@+id/action_registerFourthStepFragment_to_registerCreditCardFragment"
+            app:destination="@id/registerCreditCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInCheckEmailFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.signin.checkemail.SignInCheckEmailFragment"
+        android:label="fragment_sign_in_check_email"
+        tools:layout="@layout/fragment_sign_in_check_email" />
+    <fragment
+        android:id="@+id/signInEmailFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.signin.email.SignInEmailFragment"
+        android:label="fragment_sign_in_email"
+        tools:layout="@layout/fragment_sign_in_email" >
+        <action
+            android:id="@+id/action_signInEmailFragment_to_signInPasswordFragment"
+            app:destination="@id/signInPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInPasswordFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.signin.password.SignInPasswordFragment"
+        android:label="fragment_sign_in_password"
+        tools:layout="@layout/fragment_sign_in_password" >
+        <action
+            android:id="@+id/action_signInPasswordFragment_to_signInCheckEmailFragment"
+            app:destination="@id/signInCheckEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.register.RegisterFragment"
+        tools:layout="@layout/fragment_register"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_membershipFragment"
+            app:destination="@id/membershipFragment" />
+    </fragment>
+
     <fragment
         android:id="@+id/userSelectFragment"
         android:name="com.juniorkekod.disneyplusclonekekod.presentation.userselection.UserSelectFragment"
