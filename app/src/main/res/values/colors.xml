@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
     <color name="background_color">#1A1C29</color>
     <color name="step_text">#61616D</color>
     <color name="email_text">#F6F8FA</color>
@@ -24,4 +25,9 @@
     <color name="hint_text_color">#AAAAB6</color>
     <color name="back_button_color">#F8F8F8</color>
     <color name="warning_color">#AF413F</color>
+
+    <color name="dark_blue">#FF060222</color>
+    <color name="light_blue">#FF23479f</color>
+    <color name="background_color">#FF1A1C29</color>
+
 </resources>
