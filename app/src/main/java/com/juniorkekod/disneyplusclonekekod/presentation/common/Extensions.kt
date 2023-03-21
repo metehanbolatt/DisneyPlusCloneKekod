@@ -11,8 +11,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import com.juniorkekod.disneyplusclonekekod.R
-
 
 fun Context.userInfo(
     @StringRes message: Int,
@@ -52,3 +52,6 @@ fun TextView.clickableText(
     this.text = spannable
     this.movementMethod = LinkMovementMethod.getInstance()
 }
+
+fun View.invisible() { this.isVisible = false }
+fun View.visible() { this.isVisible = true }

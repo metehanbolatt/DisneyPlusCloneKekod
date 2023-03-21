@@ -10,7 +10,6 @@ import androidx.navigation.fragment.findNavController
 import com.juniorkekod.disneyplusclonekekod.R
 import com.juniorkekod.disneyplusclonekekod.databinding.FragmentRegisterBinding
 
-
 class RegisterFragment : Fragment() {
     private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
@@ -43,7 +42,7 @@ class RegisterFragment : Fragment() {
                     .show()
 
             } else {
-                val action = RegisterFragmentDirections.homeToMemberShipFragment(
+                val action = RegisterFragmentDirections.actionRegisterFragmentToMembershipFragment(
                     emailAddressText, isSelectedCheckbox)
                 findNavController().navigate(action)
 

@@ -16,6 +16,10 @@
     <string name="did_not_you_get_email">E-postayı almadınız mı? Önemsiz veya istenmeyen e-posta klasörlerinizi kontrol edin.</string>
     <string name="send_again">Tekrar Gönder</string>
 
+    <string name="info_txt">₺34,99/ay karşılığında üye olan ya da yıllık üyelik için sadece ₺349,90/yıl ödeyerek %15 tasarruf edin.</string>
+    <string name="subscribe_now">Şimdi üye ol</string>
+    <string name="txt_slogan">Dünyanın en iyi hikayeleri. Hepsi bir yerde.</string>
+
     <string name="key_step">ADIM</string>
     <string name="key_cancel">İPTAL ET</string>
     <string name="key_let_s_start_to_watch">Hemen bugün izlemeye başlayın</string>

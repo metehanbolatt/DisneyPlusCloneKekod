@@ -50,4 +50,5 @@ dependencies {
     androidTestImplementation libs.test.androidx.junit
     androidTestImplementation libs.test.espresso
     implementation libs.bundles.navigation
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
 }
