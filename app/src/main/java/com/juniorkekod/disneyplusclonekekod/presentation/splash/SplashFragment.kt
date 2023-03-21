@@ -12,7 +12,7 @@ import com.juniorkekod.disneyplusclonekekod.R
 import com.juniorkekod.disneyplusclonekekod.databinding.FragmentSplashBinding
 
 
-class SplashFragment : Fragment(com.juniorkekod.disneyplusclonekekod.R.layout.fragment_splash) {
+class SplashFragment : Fragment(R.layout.fragment_splash) {
     private lateinit var binding: FragmentSplashBinding
 
     override fun onCreateView(
