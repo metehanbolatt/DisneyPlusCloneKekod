@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
+    <!--Otp-->
+    <string name="cd_cancel">Cancel</string>
+    <string name="otp_name" translatable="false">Metehan</string>
+    <string name="otp_pin_description">Enter your profile PIN</string>
+    <string name="otp_edittext_hint">Pin Code</string>
+    <string name="otp_pin_error_toast">Pin Wrong</string>
+    <string name="otp_forgot_pin_tv">Forgot your PIN code?</string>
 </resources>
