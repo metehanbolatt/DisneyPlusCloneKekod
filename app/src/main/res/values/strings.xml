@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">DisneyPlusCloneKekod</string>
-    
+
     <string name="sign_in_with_email">Sign in with your email</string>
     <string name="email_address">E-mail address</string>
     <string name="next">Next</string>
@@ -15,12 +15,6 @@
     <string name="approve_your_email">We need to verify your email address. We sent an email to *******@gmail.com with a 6 digit code that will expire in 15 minutes. Please enter the code below.</string>
     <string name="did_not_you_get_email">Did not get the e-mail? Check your junk or spam folders.</string>
     <string name="send_again">Send Again</string>
-
-    <string name="info_txt">₺34,99/ay karşılığında üye olan ya da yıllık üyelik için sadece ₺349,90/yıl ödeyerek %15 tasarruf edin.</string>
-    <string name="subscribe_now">Şimdi üye ol</string>
-    <string name="sign_in">OTURUM AÇ</string>
-    <string name="txt_slogan">Dünyanın en iyi hikayeleri. Hepsi bir yerde.</string>
-
 
     <string name="key_step">STEP</string>
     <string name="key_cancel">CANCEL</string>
@@ -63,4 +57,11 @@
     <string name="warning_space_line">Please fill in the blank</string>
     <string name="valid_email_address">Enter valid e-mail address</string>
 
+    <!--Otp-->
+    <string name="cd_cancel">Cancel</string>
+    <string name="otp_name" translatable="false">Metehan</string>
+    <string name="otp_pin_description">Enter your profile PIN</string>
+    <string name="otp_edittext_hint">Pin Code</string>
+    <string name="otp_pin_error_toast">Pin Wrong</string>
+    <string name="otp_forgot_pin_tv">Forgot your PIN code?</string>
 </resources>

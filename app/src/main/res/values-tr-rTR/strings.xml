@@ -55,4 +55,11 @@
     <string name="create_password">Parola oluşturun</string>
     <string name="warning_space_line">Lütfen Boş Alanı Doldurun</string>
     <string name="valid_email_address">Geçerli E-Posta Adresi Girin</string>
+    <!--Otp-->
+    <string name="cd_cancel">İptal</string>
+    <string name="otp_pin_description">Profil PIN kodunuzu girin</string>
+    <string name="otp_edittext_hint">Pin Kodu</string>
+    <string name="otp_pin_error_toast">Şifre Hatalı</string>
+    <string name="otp_forgot_pin_tv">PIN kodunuzu mu unuttunuz?</string>
+
 </resources>
