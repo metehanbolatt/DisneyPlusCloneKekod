@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuBottomNavigationItemHome"
+        android:checkable="true"
+        android:icon="@drawable/ic_home"
+        android:state_checked="true"
+        android:title="@null" />
+
+    <item
+        android:id="@+id/menuBottomNavigationItemSearch"
+        android:checkable="true"
+        android:icon="@drawable/ic_search"
+        android:state_checked="true"
+        android:title="@null" />
+
+    <item
+        android:id="@+id/menuBottomNavigationItemTracing"
+        android:checkable="true"
+        android:icon="@drawable/ic_download"
+        android:state_checked="true"
+        android:title="@null" />
+
+    <!--    TODO (Ahmet) -> menuBottomNavigationItemProfile will be edited when the imageViewAvatar is complete. -->
+    <item
+        android:id="@+id/menuBottomNavigationItemProfile"
+        android:checkable="true"
+        android:icon="@drawable/white_circle_background"
+        android:state_checked="true"
+        android:title="@null" />
+
+</menu>

@@ -56,5 +56,6 @@
 
     <color name="button_bg">#0072D2</color>
     <color name="info_txt">#8E8D93</color>
+    <color name="bottom_navigation_menu_color">#01052E</color>
 
 </resources>
