@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewDownloadedImage"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium"
+        tools:srcCompat="@drawable/iv_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDownloadedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="18dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDownloadedImage"
+        app:layout_constraintStart_toEndOf="@+id/imageViewDownloadedImage"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDownloadedImage" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDownloadedSeriesDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textViewDownloadedName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDownloadedName" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDownloadedSeriesProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="12dp"
+        android:progress="60"
+        android:progressBackgroundTint="@color/material_dynamic_neutral40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDownloadedImage" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewDownloadedSeriesDownloadState"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="350dp"
+        android:src="@drawable/ic_right_arrow_white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkBoxDownloadedSeriesSelection"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="350dp"
+        android:buttonTint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
