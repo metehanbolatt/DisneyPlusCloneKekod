@@ -17,7 +17,7 @@ abstract class BaseFragment<VB : ViewBinding>(
     protected abstract fun setListeners()
     protected abstract fun setObserve()
     open fun setAdapter(){}
-
+    open fun setInitialize(){}
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -31,6 +31,8 @@ abstract class BaseFragment<VB : ViewBinding>(
         super.onViewCreated(view, savedInstanceState)
         setListeners()
         setObserve()
+        setAdapter()
+        setInitialize()
     }
 
     override fun onDestroyView() {
