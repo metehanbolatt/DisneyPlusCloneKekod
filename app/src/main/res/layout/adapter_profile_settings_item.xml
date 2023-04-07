@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/space_8"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/adapter_profile_settings_title_tv"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/size_16"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_12"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Profilde Ne var Ne yok " />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:dividerColor="@color/light_gray"
+        android:layout_marginTop="@dimen/space_12"
+        app:layout_constraintTop_toBottomOf="@+id/adapter_profile_settings_title_tv"
+        tools:layout_editor_absoluteX="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
