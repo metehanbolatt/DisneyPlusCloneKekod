@@ -67,5 +67,5 @@
     <string name="otp_forgot_pin_tv">PIN kodunuzu mu unuttunuz?</string>
     <!--Profile-->
     <string name="key_profile_settings_btn">PROFİLLERİ DÜZENLE</string>
-    <string name="key_profile_version_info">Sürüm:½d</string>
+    <string name="key_profile_version_info">Sürüm:%s</string>
 </resources>

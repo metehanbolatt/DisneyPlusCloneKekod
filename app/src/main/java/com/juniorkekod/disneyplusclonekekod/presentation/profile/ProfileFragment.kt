@@ -11,8 +11,8 @@ import com.juniorkekod.disneyplusclonekekod.presentation.profile.adapter.UserIma
 class ProfileFragment : BaseFragment<FragmentProfileBinding>(
     FragmentProfileBinding::inflate
 ) {
-    private val userImageAdapter = UserImageAdapter()
-    private val settingsListAdapter = SettingsListAdapter()
+    private val userImageAdapter  : UserImageAdapter by lazy{UserImageAdapter()}
+    private val settingsListAdapter : SettingsListAdapter by lazy {SettingsListAdapter()}
 
     override fun setInitialize() {
         val pInfo = requireContext().packageManager.getPackageInfo(
