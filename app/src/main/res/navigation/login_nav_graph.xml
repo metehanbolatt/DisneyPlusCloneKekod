@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_nav_graph"
-    app:startDestination="@id/userSelectFragment">
+    app:startDestination="@id/searchFragment">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -123,4 +123,9 @@
         android:name="com.juniorkekod.disneyplusclonekekod.presentation.userselection.UserSelectFragment"
         android:label="fragment_user_select"
         tools:layout="@layout/fragment_user_select" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.search.SearchFragment"
+        tools:layout="@layout/fragment_search"
+        android:label="SearchFragment" />
 </navigation>

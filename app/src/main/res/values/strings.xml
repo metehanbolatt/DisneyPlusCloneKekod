@@ -68,4 +68,11 @@
     <string name="otp_edittext_hint">Pin Code</string>
     <string name="otp_pin_error_toast">Pin Wrong</string>
     <string name="otp_forgot_pin_tv">Forgot your PIN code?</string>
+
+    <!--Search-->
+    <string name="originals">Originals</string>
+    <string name="movies">Movies</string>
+    <string name="series">Series</string>
+    <string name="make_a_search">Make a search</string>
+    <string name="discover">Discover</string>
 </resources>
