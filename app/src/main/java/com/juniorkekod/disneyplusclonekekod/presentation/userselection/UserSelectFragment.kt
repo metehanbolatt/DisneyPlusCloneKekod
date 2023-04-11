@@ -1,34 +1,28 @@
 package com.juniorkekod.disneyplusclonekekod.presentation.userselection
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import com.google.android.flexbox.AlignItems
 import com.google.android.flexbox.FlexDirection
 import com.google.android.flexbox.FlexboxLayoutManager
 import com.google.android.flexbox.JustifyContent
+import com.juniorkekod.disneyplusclonekekod.base.BaseFragment
 import com.juniorkekod.disneyplusclonekekod.databinding.FragmentUserSelectBinding
 
-class UserSelectFragment : Fragment() {
-
-    private lateinit var binding: FragmentUserSelectBinding
+class UserSelectFragment : BaseFragment<FragmentUserSelectBinding>(
+    FragmentUserSelectBinding::inflate
+) {
     private val viewModel by activityViewModels<UserSelectViewModel>()
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        binding = FragmentUserSelectBinding.inflate(layoutInflater)
-        return binding.root
+
+    override fun setListeners() {
+
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun setObserve() {
         observeListener()
+
     }
+
 
     private fun setAdapter(list: List<UserSelectModel>) {
         val manager = FlexboxLayoutManager(requireContext())

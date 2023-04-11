@@ -66,4 +66,10 @@
     <string name="otp_pin_error_toast">Şifre Hatalı</string>
     <string name="otp_forgot_pin_tv">PIN kodunuzu mu unuttunuz?</string>
 
+    <!--Search-->
+    <string name="originals">Originals</string>
+    <string name="movies">Filmler</string>
+    <string name="series">Diziler</string>
+    <string name="make_a_search">Arama yapın</string>
+    <string name="discover">Keşfet</string>
 </resources>

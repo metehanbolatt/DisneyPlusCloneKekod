@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_search_scene">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_40"
+        android:background="@drawable/search_background"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/space_16"
+        android:fontFamily="@font/avenir_roman"
+        android:hint="@string/make_a_search"
+        android:padding="@dimen/space_12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_history_rv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/search_history_background"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="@id/search_bar"
+        app:layout_constraintStart_toStartOf="@id/search_bar"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+        tools:itemCount="5"
+        tools:listitem="@layout/search_history_item" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/originals_card"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/space_32"
+        android:backgroundTint="@color/card_background"
+        app:cardCornerRadius="@dimen/space_10"
+        app:layout_constraintEnd_toStartOf="@+id/movies_card"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/star_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_10"
+                android:src="@drawable/ic_star" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_roman"
+                android:text="@string/originals"
+                android:textColor="@color/white" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/movies_card"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/card_background"
+        app:cardCornerRadius="@dimen/space_10"
+        app:layout_constraintEnd_toStartOf="@+id/series_card"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/originals_card"
+        app:layout_constraintTop_toTopOf="@id/originals_card">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/movies_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_10"
+                android:src="@drawable/ic_movie" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_roman"
+                android:text="@string/movies"
+                android:textColor="@color/white" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/series_card"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/card_background"
+        app:cardCornerRadius="@dimen/space_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/movies_card"
+        app:layout_constraintTop_toTopOf="@id/originals_card">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/series_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_10"
+                android:src="@drawable/ic_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_roman"
+                android:text="@string/series"
+                android:textColor="@color/white" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/discover_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_32"
+        android:fontFamily="@font/avenir_heavy"
+        android:text="@string/discover"
+        android:textColor="@color/search_text_color"
+        app:layout_constraintStart_toStartOf="@id/originals_card"
+        app:layout_constraintTop_toBottomOf="@id/originals_card" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/discover_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/space_16"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/discover_text"
+        app:spanCount="2" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

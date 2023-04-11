@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_8"
+    app:cardCornerRadius="4dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/discover_image"
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_launcher_background" />
+
+</androidx.cardview.widget.CardView>
