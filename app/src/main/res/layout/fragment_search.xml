@@ -10,16 +10,14 @@
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_40"
         android:background="@drawable/search_background"
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="@dimen/space_16"
         android:fontFamily="@font/avenir_roman"
         android:hint="@string/make_a_search"
         android:padding="@dimen/space_12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -42,7 +40,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="@dimen/space_32"
         android:backgroundTint="@color/card_background"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="@dimen/space_10"
         app:layout_constraintEnd_toStartOf="@+id/movies_card"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,10 +57,10 @@
                 android:id="@+id/star_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/space_10"
                 android:src="@drawable/ic_star" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/avenir_roman"
@@ -78,7 +76,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:backgroundTint="@color/card_background"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="@dimen/space_10"
         app:layout_constraintEnd_toStartOf="@+id/series_card"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/originals_card"
@@ -95,10 +93,10 @@
                 android:id="@+id/movies_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/space_10"
                 android:src="@drawable/ic_movie" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/avenir_roman"
@@ -114,7 +112,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:backgroundTint="@color/card_background"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="@dimen/space_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/movies_card"
@@ -131,10 +129,10 @@
                 android:id="@+id/series_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/space_10"
                 android:src="@drawable/ic_tv" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/avenir_roman"

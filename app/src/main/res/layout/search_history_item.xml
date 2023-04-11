@@ -23,7 +23,7 @@
         android:fontFamily="@font/avenir_roman"
         android:maxLines="1"
         android:textColor="#BDBDBD"
-        android:textSize="20sp"
+        android:textSize="@dimen/search_history_item_text_size"
         tools:text="Martian" />
 
     <androidx.appcompat.widget.AppCompatImageView

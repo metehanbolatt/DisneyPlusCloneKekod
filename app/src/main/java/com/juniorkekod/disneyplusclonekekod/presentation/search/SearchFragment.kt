@@ -33,6 +33,7 @@ class SearchFragment : BaseFragment<FragmentSearchBinding>(FragmentSearchBinding
                 v.performClick()
             }
         }
+
     }
 
     private fun backPressedControl() {

@@ -18,6 +18,8 @@
     <dimen name="register_credit_card_titles_margin_top">5dp</dimen>
     <dimen name="register_credit_card_payment_text_margin_bottom">15dp</dimen>
 
+    <dimen name="search_history_item_text_size">20sp</dimen>
+
     <dimen name="email_text">20sp</dimen>
     <dimen name="email_space">20dp</dimen>
     <dimen name="information_text">13sp</dimen>
@@ -43,6 +45,7 @@
     <dimen name="space_16">16dp</dimen>
     <dimen name="space_20">20dp</dimen>
     <dimen name="space_32">32dp</dimen>
+    <dimen name="space_40">40dp</dimen>
 
     <dimen name="size_16">16sp</dimen>
     <dimen name="size_12">12sp</dimen>
