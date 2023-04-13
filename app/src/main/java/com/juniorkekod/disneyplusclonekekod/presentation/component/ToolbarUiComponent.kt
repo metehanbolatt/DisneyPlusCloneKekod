@@ -35,59 +35,51 @@ class ToolbarUiComponent @JvmOverloads constructor(
     }
 
     fun setOnlyCancelIconVisibility(isVisible: Boolean) {
-        isVisible.also { binding.toolbarCancelIcon.isVisible = it }
+        binding.toolbarCancelIcon.isVisible = isVisible
     }
 
     fun setOnlyTitleVisibility(isVisible: Boolean) {
-        isVisible.also { binding.toolbarTitle.isVisible = it }
+        binding.toolbarTitle.isVisible = isVisible
     }
 
     fun setBackAndShareIconVisibility(isVisible: Boolean) {
-        isVisible.also {
-            binding.toolbarBackIcon.isVisible = it
-            binding.toolbarShareIcon.isVisible = it
-        }
+        binding.toolbarBackIcon.isVisible = isVisible
+        binding.toolbarShareIcon.isVisible = isVisible
+
     }
 
     fun setBackAndShareIconWithTitleVisibility(isVisible: Boolean) {
-        isVisible.also {
-            binding.toolbarBackIcon.isVisible = it
-            binding.toolbarTitle.isVisible = it
-            binding.toolbarShareIcon.isVisible = it
-        }
+        binding.toolbarBackIcon.isVisible = isVisible
+        binding.toolbarTitle.isVisible = isVisible
+        binding.toolbarShareIcon.isVisible = isVisible
+
     }
 
     fun setBackIconWithTitleVisibility(isVisible: Boolean) {
-        isVisible.also {
-            binding.toolbarBackIcon.isVisible = it
-            binding.toolbarTitle.isVisible = it
-        }
+        binding.toolbarBackIcon.isVisible = isVisible
+        binding.toolbarTitle.isVisible = isVisible
     }
 
     fun setBackIconWithSubTitleVisibility(isVisible: Boolean) {
-        isVisible.also {
-            binding.toolbarBackIcon.isVisible = it
-            binding.toolbarSubTitle.isVisible = it
-        }
+        binding.toolbarBackIcon.isVisible = isVisible
+        binding.toolbarSubTitle.isVisible = isVisible
     }
 
     fun setTitleAndEndTitleVisibility(isVisible: Boolean) {
-        isVisible.also {
-            binding.toolbarTitle.isVisible = it
-            binding.toolbarEndTitle.isVisible = it
-        }
+        binding.toolbarTitle.isVisible = isVisible
+        binding.toolbarEndTitle.isVisible = isVisible
     }
 
     //Text
-    fun setTitleText(string: String) {
-        binding.toolbarTitle.text = string
+    fun setTitleText(toolbarTitle: String) {
+        binding.toolbarTitle.text = toolbarTitle
     }
 
-    fun setSubTitleText(string: String) {
-        binding.toolbarSubTitle.text = string
+    fun setSubTitleText(toolbarSubTitle: String) {
+        binding.toolbarSubTitle.text = toolbarSubTitle
     }
 
-    fun setEndTitleText(string: String) {
-        binding.toolbarEndTitle.text = string
+    fun setEndTitleText(toolbarEndTitle: String) {
+        binding.toolbarEndTitle.text = toolbarEndTitle
     }
 }
