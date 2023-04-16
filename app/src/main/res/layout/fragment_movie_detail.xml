@@ -27,13 +27,14 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:background="@drawable/disney_logo_white" />
+                android:background="@drawable/marvel_logo" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/space_10"
                 android:layout_marginEnd="20dp"
                 android:fontFamily="@font/avenir_heavy"
                 android:text="@string/movie_specific_details"
@@ -44,12 +45,13 @@
             <androidx.appcompat.widget.AppCompatButton
                 style="@style/AppcompatButtonAppearance"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/continue_button"
                 android:layout_marginVertical="5dp"
+                android:drawableTop="@drawable/play_icon"
                 android:text="@string/play"
-                app:icon="@drawable/play_icon"
-                app:iconGravity="textStart" />
+                android:gravity="center"
+                />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -63,13 +65,13 @@
                     android:layout_marginHorizontal="5dp"
                     android:background="@color/transparent"
                     android:drawableTop="@drawable/watch_list"
-                    android:gravity="center"
-                    android:textStyle="bold"
                     android:fontFamily="@font/avenir_roman"
+                    android:gravity="center"
                     android:text="@string/wacth_list"
-                    android:textSize="11sp"
+                    android:textAllCaps="false"
                     android:textColor="@color/hint_text_color"
-                    android:textAllCaps="false" />
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
@@ -77,27 +79,27 @@
                     android:layout_marginHorizontal="5dp"
                     android:background="@color/transparent"
                     android:drawableTop="@drawable/ic_group"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:textSize="11sp"
                     android:fontFamily="@font/avenir_roman"
-                    android:textColor="@color/hint_text_color"
+                    android:gravity="center"
                     android:text="@string/group_watch"
-                    android:textAllCaps="false" />
+                    android:textAllCaps="false"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:background="@color/transparent"
-                    android:textSize="11sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/hint_text_color"
-                    android:fontFamily="@font/avenir_roman"
                     android:drawableTop="@drawable/ic_download"
+                    android:fontFamily="@font/avenir_roman"
                     android:gravity="center"
                     android:text="@string/download"
-                    android:textAllCaps="false" />
+                    android:textAllCaps="false"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -106,23 +108,25 @@
                 android:id="@+id/tabLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#0000"
+                android:layout_marginHorizontal="@dimen/space_10"
+                android:background="@color/transparent"
                 android:contentDescription="@string/accept_and_continue"
-                app:tabIndicator="@color/blue_00"
-                app:tabMode="auto"
+                app:tabGravity="fill"
+                app:tabMode="scrollable"
                 app:tabSelectedTextColor="@color/white" />
 
             <View
                 android:id="@+id/divider"
                 android:layout_width="match_parent"
-
                 android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/space_10"
                 android:background="@color/line_color" />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space_10" />
 
         </LinearLayout>
 

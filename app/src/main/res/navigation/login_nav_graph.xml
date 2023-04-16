@@ -41,8 +41,7 @@
             app:nullable="true"/>
         <argument
             android:name="isSelectedCheckBox"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            app:argType="boolean" />
         <action
             android:id="@+id/action_createPasswordFragment_to_registerFourthStepFragment"
             app:destination="@id/registerFourthStepFragment" />
