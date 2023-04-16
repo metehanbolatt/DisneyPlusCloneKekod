@@ -68,4 +68,15 @@
     <string name="otp_edittext_hint">Pin Code</string>
     <string name="otp_pin_error_toast">Pin Wrong</string>
     <string name="otp_forgot_pin_tv">Forgot your PIN code?</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="movie_specific_details">2017 • 2 hours 13 minutes • Adolescence, Sci-Fi, Superhero, Action - Adventure</string>
+    <string name="play">PLAY</string>
+
+    <!--Movie Detail-->
+    <string name="recommended">RECOMMENDED </string>
+    <string name="particulars">PARTICULARS </string>
+    <string name="wacth_list">My Watch List</string>
+    <string name="group_watch">GroupWatch</string>
+    <string name="download">Download</string>
+
 </resources>

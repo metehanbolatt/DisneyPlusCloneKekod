@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_nav_graph"
-    app:startDestination="@id/userSelectFragment">
+    app:startDestination="@id/movieDetailFragment">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -41,7 +41,8 @@
             app:nullable="true"/>
         <argument
             android:name="isSelectedCheckBox"
-            app:argType="boolean" />
+            app:argType="boolean"
+            android:defaultValue="false" />
         <action
             android:id="@+id/action_createPasswordFragment_to_registerFourthStepFragment"
             app:destination="@id/registerFourthStepFragment" />
@@ -123,4 +124,9 @@
         android:name="com.juniorkekod.disneyplusclonekekod.presentation.userselection.UserSelectFragment"
         android:label="fragment_user_select"
         tools:layout="@layout/fragment_user_select" />
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.juniorkekod.disneyplusclonekekod.presentation.moviedetail.MovieDetailFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail" />
 </navigation>

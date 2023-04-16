@@ -10,8 +10,10 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.StringRes
+import androidx.appcompat.widget.AppCompatImageView
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
+import com.bumptech.glide.Glide
 import com.juniorkekod.disneyplusclonekekod.R
 
 fun Context.userInfo(
@@ -51,6 +53,12 @@ fun TextView.clickableText(
 
     this.text = spannable
     this.movementMethod = LinkMovementMethod.getInstance()
+}
+
+fun AppCompatImageView.downloadImage(url: String?) {
+    Glide.with(this)
+        .load(url)
+        .into(this)
 }
 
 fun View.invisible() { this.isVisible = false }

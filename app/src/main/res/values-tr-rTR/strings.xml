@@ -65,5 +65,15 @@
     <string name="otp_edittext_hint">Pin Kodu</string>
     <string name="otp_pin_error_toast">Şifre Hatalı</string>
     <string name="otp_forgot_pin_tv">PIN kodunuzu mu unuttunuz?</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="movie_specific_details">2017 • 2 saat 13 dakika • Ergenlik, Bilim Kurgu, Süper Kahraman, Aksiyon - Macera</string>
+    <string name="play">OYNAT</string>
+
+    <!--Movie Detail-->
+    <string name="recommended">ÖNERİLENLER</string>
+    <string name="particulars">AYRINTILAR</string>
+    <string name="wacth_list">İzleme Listem</string>
+    <string name="group_watch">GroupWatch</string>
+    <string name="download">İndir</string>
 
 </resources>

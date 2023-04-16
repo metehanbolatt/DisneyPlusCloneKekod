@@ -39,6 +39,9 @@ android {
 }
 
 dependencies {
+
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+
     implementation libs.bundles.default
     implementation libs.androidx.constraintlayout
     implementation libs.hilt.android

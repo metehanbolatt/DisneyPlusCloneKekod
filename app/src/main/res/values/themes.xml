@@ -4,7 +4,7 @@
         <item name="android:statusBarColor">@color/dark_blue</item>
         <item name="android:colorBackground">@color/background_color</item>
     </style>
-    
+
     <style name="EditTextLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="background">@color/step_text</item>
         <item name="boxStrokeColor">@color/checkbox_color</item>
@@ -16,6 +16,19 @@
         <item name="colorControlNormal">@color/input_field_cursor_color</item>
         <item name="colorControlActivated">@color/input_field_cursor_color</item>
         <item name="colorControlHighlight">@color/input_field_cursor_color</item>
+    </style>
+
+    <style name="AppcompatButtonAppearance" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="fontFamily">@font/avenir_heavy</item>
+    </style>
+
+    <style name="MaterialTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:fontFamily">@font/avenir_heavy</item>
     </style>
 
 </resources>
