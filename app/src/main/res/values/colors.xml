@@ -56,5 +56,7 @@
 
     <color name="button_bg">#0072D2</color>
     <color name="info_txt">#8E8D93</color>
+    <color name="specific_movie_detail_text_color">#B0B2B7</color>
+    <color name="transparent">#00000000</color>
 
 </resources>
